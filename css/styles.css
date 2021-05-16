@@ -87,7 +87,7 @@ body {
 /*================HEADER================*/
 .header {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid var(--color-border);
 }
 .navigation {
@@ -183,19 +183,19 @@ body {
 .skills-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.skills-deskription-item:not(:last-child) {
-  margin-right: 30px;
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0;
 }
 .skills-deskription-item {
-  flex-basis: 270px;
+  width: calc((100%-120px) / 4);
 }
 
 /*============END SECTION SKILLS======*/
 /*===========SECTION ABOUT==========*/
 .about {
   text-align: center;
+  padding: 0;
 }
 .about-img-list {
   display: flex;
@@ -307,11 +307,12 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .projects-item {
-  display: flex;
-  width: calc((100%-60px) / 3);
-
+  margin-left: 30px;
+  margin-top: 30px;
   border-bottom: 1px solid var(--background-color-filters);
 }
 
