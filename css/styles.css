@@ -90,6 +90,11 @@ body {
   padding-bottom: 24px;
   border-bottom: 1px solid var(--color-border);
 }
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navigation {
   display: flex;
   align-items: center;
@@ -101,13 +106,17 @@ body {
   display: flex;
   align-items: center;
 }
+.menu-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .contacts-list {
   display: flex;
   align-items: center;
-  margin-left: auto;
 
   font-weight: 500;
   font-size: 14px;
@@ -119,14 +128,23 @@ body {
 .contacts-list :focus {
   color: var(--accent-color);
 }
-.tel-link {
-  display: block;
 
+.tel-link {
+  width: 122px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--paragraph-color);
 }
 .mail-link {
+  width: 135px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--paragraph-color);
+  margin-left: auto;
+}
+.contacts-list-item-mail {
   margin-right: 50px;
+  margin-left: auto;
 }
 
 /*===========END HEADER============*/
@@ -145,7 +163,7 @@ body {
 }
 .modal-btn {
   height: 50px;
-  padding: 10 32px;
+  padding: 10px 32px;
   margin-top: 30px;
 
   border-radius: 4px;
@@ -164,8 +182,18 @@ body {
 }
 /*===============SECTION SKILLS========*/
 
-.skills-title {
-  color: transparent;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .description-title {
   font-weight: 700;
@@ -182,29 +210,26 @@ body {
 }
 .skills-list {
   display: flex;
-  align-items: center;
-  margin-top: -30px;
-  margin-left: -30px;
-  padding: 0;
 }
-.skills-deskription-item {
-  width: calc((100%-120px) / 4);
+.skills-description-item {
+  width: 270px;
+}
+.skills-description-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*============END SECTION SKILLS======*/
 /*===========SECTION ABOUT==========*/
 .about {
   text-align: center;
-  padding: 0;
 }
 .about-img-list {
   display: flex;
-  margin-top: -50px;
-  margin-left: -30px;
+
+  margin-right: -30px;
 }
-.about-img-list-item {
-  margin-top: 50px;
-  margin-left: 30px;
+.about-img-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .about-title {
   font-weight: 700;
@@ -222,27 +247,31 @@ body {
 .team {
   text-align: center;
 }
-.team-list {
-  display: flex;
-  margin-top: -50px;
-  margin-left: -30px;
-}
-.team-list-item {
-  margin-top: 50px;
-  margin-left: 30px;
-}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-bottom: 50px;
+}
+.sub-title-deskription {
+  display: flex;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.team-list-item {
+  width: 270px;
+  background-color: var(--text-color-white);
+}
+.team-list-item:not(:first-child) {
+  margin-left: 30px;
 }
 .team-list-sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
 .team-list-description {
   font-size: 16px;
@@ -307,13 +336,15 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin-right: -30px;
   margin-top: -30px;
 }
 .projects-item {
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 370px;
   border-bottom: 1px solid var(--background-color-filters);
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: var(--text-color-white);
 }
 
 /*===========END SECTION FILTERS===========*/
@@ -334,31 +365,28 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color-white);
   margin-top: 20px;
-  margin-bottom: 9px;
 }
 .footer-contacts-list {
-  display: flex;
-  flex-direction: column;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.footer-contacts-list-item {
-  margin-bottom: 9px;
-  margin-top: 9px;
 }
 
 .footer-contacts-list :hover,
 .footer-contacts-list :focus {
   color: var(--accent-color);
 }
-
+.footer-contacts-list-item {
+  display: flex;
+}
 .footer-tel-link {
   color: var(--color-footer-link);
+  padding-top: 9px;
 }
 .footer-mail-link {
   color: var(--color-footer-link);
+  padding-top: 9px;
 }
 /*======logo,address,contacts-list in COMPONENTS===*/
 /*==============END FOOTER==========*/

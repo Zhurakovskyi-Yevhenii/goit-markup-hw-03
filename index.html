@@ -17,7 +17,7 @@
  <body>
      <!--HEADER-->
     <header class="header">
-        <div class="conteiner">
+        <div class="conteiner header-conteiner">
         <nav class="navigation ">
                 <a class="logo-link link" href="./index.html"><span class="part-logo">Web</span>Studio</a>
             <ul class="menu-list list">
@@ -25,11 +25,12 @@
                 <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Портфолио</a></li>
                 <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
             </ul>
+            </nav>
             <ul class="contacts-list list">
-                <li class="contacts-list-item"><a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                <li class="contacts-list-item"><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="contacts-list-item-mail"><a class="mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                <li class="contacts-list-item-tel"><a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
+        
     </div>
      </header>
      <main>
@@ -44,26 +45,37 @@
             
         <!--SECTION SKILLS-->
                <section class="skills section">
-                   <div class="conteiner ">
-            <h2 class="skills-title">Наши преймущества</h2>
+                    <div class="conteiner ">
+            <h2 class="visually-hidden">Наши преймущества</h2>
+         
             <ul class="skills-list list">
+            
+
                 <li class="skills-description-item">
                     <h3 class="description-title">Внимание к деталям</h3>
                     <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
+                
+            
                 <li class="skills-description-item">
                     <h3 class="description-title">Пунктуальность</h3>
                     <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
+                
+            
                 <li class="skills-description-item">
                     <h3 class="description-title">Планирование</h3>
                     <p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
+                
+            
                 <li class="skills-description-item">
                     <h3 class="description-title">Современные технологии</h3>
                     <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
+                
             </ul>
+            
             </div>
         </section>
         <!--SECTION ABOUT-->
@@ -82,6 +94,7 @@
             <div class="conteiner">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list list">
+               <div class="sub-title-deskription" >
                 <li class="team-list-item">
                     <img class="team-img" src="./images/img.jpg" alt="Игорь Демьяненко" width="270" />
                     <h3 class="team-list-sub-title">Игорь Демьяненко</h3>
@@ -102,6 +115,7 @@
                     <h3 class="team-list-sub-title">Михаил Ермаков</h3>
                     <p class="team-list-description">UI Designer</p>
                 </li>
+                </div>
             </ul>
             </div>
         </section>
